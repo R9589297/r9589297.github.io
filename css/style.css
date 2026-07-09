@@ -361,3 +361,126 @@ header.site.on-photo .navtoggle{color:#F5F1E4;}
   flex-wrap:wrap;
 }
 .kicker-list li:last-child{border-bottom:1px solid var(--paper-line);}
+
+/* ===========================================================
+   AEON Lab homepage hero implementation
+   Uses img/hero.jpeg and places the text on the right side of
+   the butterfly photograph.
+   =========================================================== */
+
+.photo-hero.butterfly-hero {
+  position: relative;
+  min-height: 88vh;
+  display: flex;
+  align-items: flex-end;
+  color: #F5F1E4;
+  border-bottom: 1px solid var(--paper-line);
+  background-image:
+    linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.02) 0%,
+      rgba(0, 0, 0, 0.10) 42%,
+      rgba(0, 0, 0, 0.68) 100%
+    ),
+    url("../img/hero.jpeg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.photo-hero.butterfly-hero .hero-inner {
+  width: 100%;
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 32px 72px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.photo-hero.butterfly-hero h1,
+.photo-hero.butterfly-hero .tagline,
+.photo-hero.butterfly-hero .meta-lines,
+.photo-hero.butterfly-hero .hero-actions {
+  width: min(100%, 540px);
+}
+
+.photo-hero.butterfly-hero h1 {
+  color: #FBF9F1;
+  font-size: clamp(2.8rem, 6.3vw, 5.8rem);
+  line-height: 0.94;
+  letter-spacing: -0.025em;
+  max-width: 10ch;
+  margin-bottom: 0.28em;
+}
+
+.photo-hero.butterfly-hero .tagline {
+  font-size: clamp(1.05rem, 1.7vw, 1.35rem);
+  line-height: 1.45;
+  color: rgba(245, 241, 228, 0.9);
+  max-width: 38ch;
+}
+
+.photo-hero.butterfly-hero .meta-lines {
+  color: rgba(245, 241, 228, 0.74);
+}
+
+.photo-hero.butterfly-hero .hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.photo-hero.butterfly-hero .btn {
+  border-color: #E9C77E;
+  color: #E9C77E;
+}
+
+.photo-hero.butterfly-hero .btn:hover {
+  background: #E9C77E;
+  color: #1D2A20;
+}
+
+.photo-hero.butterfly-hero .btn.solid {
+  background: #E9C77E;
+  border-color: #E9C77E;
+  color: #1D2A20;
+}
+
+.photo-hero.butterfly-hero .btn.solid:hover {
+  background: #FBF9F1;
+  border-color: #FBF9F1;
+}
+
+@media (max-width: 760px) {
+  .photo-hero.butterfly-hero {
+    min-height: 82vh;
+    background-image:
+      linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.05) 0%,
+        rgba(0, 0, 0, 0.72) 100%
+      ),
+      url("../img/hero.jpeg");
+    background-position: 34% center;
+  }
+
+  .photo-hero.butterfly-hero .hero-inner {
+    align-items: flex-start;
+    padding: 0 28px 52px;
+  }
+
+  .photo-hero.butterfly-hero h1 {
+    font-size: clamp(2.45rem, 12vw, 4.2rem);
+    max-width: 12ch;
+  }
+
+  header.site.on-photo .navlinks {
+    background: rgba(29, 42, 32, 0.96);
+    border-bottom-color: rgba(245, 241, 228, 0.18);
+  }
+
+  header.site.on-photo .navlinks a {
+    border-bottom-color: rgba(245, 241, 228, 0.18);
+  }
+}
